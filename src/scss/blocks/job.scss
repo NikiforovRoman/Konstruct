@@ -1,0 +1,40 @@
+.job {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  background-image: -webkit-image-set(
+    url("../../img/build/job-bg.avif") type("image/avif"),
+    url("../../img/build/job-bg.webp") type("image/webp"),
+    url("../../img/build/job-bg.jpg") type("image/jpeg")
+  );
+  background-image: image-set(
+    url("../../img/build/job-bg.avif") type("image/avif"),
+    url("../../img/build/job-bg.webp") type("image/webp"),
+    url("../../img/build/job-bg.jpg") type("image/jpeg")
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &__wrapper {
+    height: 100%;
+    max-width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    max-width: 350px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  &__button {
+    padding: 11px 26px;
+  }
+}

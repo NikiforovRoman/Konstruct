@@ -1,0 +1,29 @@
+.nav {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 10px;
+    align-items: center;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      color: $accent-text-color;
+    }
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+  border-bottom: 1px solid $basic-border-color;
+  margin-bottom: 58px;
+}

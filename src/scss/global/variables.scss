@@ -1,0 +1,16 @@
+
+//Text
+$headerFooter-text-color: #FFFFFF;
+$basic-text-color: #48555B;
+$basic-border-color: #E6E6E6;
+$hover-text-color: #00A4E5;
+$accent-text-color: #16ACE8;
+
+//Backgrounds
+
+$form-bg: #171819;
+$footer-bg: #141A20;
+
+//Button
+$basic-button-color: #00A4E5;
+$hover-button-color: lighten($color: $basic-button-color, $amount: 20%);

@@ -1,0 +1,15 @@
+.button {
+    font-weight: 700;
+    font-size: 13px;
+    font-family: 'Open Sans';
+    color: white;
+    background-color: $basic-button-color;
+    border: none;
+    padding: 11px 29px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+        background-color: $hover-button-color;
+    }
+}

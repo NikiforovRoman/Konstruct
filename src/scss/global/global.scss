@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: $basic-text-color;
+  font-size: 13px;
+}
+
+.title {
+  font-family: "Bebas Neue";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 5.79px;
+}
+
+.wrapper {
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+

@@ -1,0 +1,181 @@
+.story {
+  margin-bottom: 118px;
+  &__title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    letter-spacing: 2.31px;
+    line-height: 21.09px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 65px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 2px;
+      background-image: url("../../img/build/Line.svg");
+      background-repeat: no-repeat;
+      top: 28px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 405.08px;
+    margin-bottom: 30px;
+
+    &--accent {
+      color: $accent-text-color;
+    }
+
+    @media (max-width: 899px) {
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__subtext {
+    line-height: 23px;
+    max-width: 400px;
+    @media (max-width: 899px) {
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 899px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+    }
+  }
+
+  &__advantages {
+    align-self: flex-end;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    @media (max-width: 899px) {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      padding: 0 10px;
+    }
+  }
+
+  &__item {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 140px;
+    height: 224px;
+    color: $headerFooter-text-color;
+    @media (max-width: 899px) {
+      width: 100vw;
+      background-size: cover;
+    }
+
+    &:first-child {
+      background-image: -webkit-image-set(
+        url("../../img/build/ruler.avif") type("image/avif"),
+        url("../../img/build/ruler.webp") type("image/webp"),
+        url("../../img/build/ruler.jpg") type("image/jpeg")
+      );
+      background-image: image-set(
+        url("../../img/build/ruler.avif") type("image/avif"),
+        url("../../img/build/ruler.webp") type("image/webp"),
+        url("../../img/build/ruler.jpg") type("image/jpeg")
+      );
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (min-resolution: 2dppx) {
+        background-image: -webkit-image-set(
+        url("../../img/build/ruler2x.avif") type("image/avif"),
+        url("../../img/build/ruler2x.webp") type("image/webp"),
+        url("../../img/build/ruler2x.jpg") type("image/jpeg")
+      );
+      background-image: image-set(
+        url("../../img/build/ruler2x.avif") type("image/avif"),
+        url("../../img/build/ruler2x.webp") type("image/webp"),
+        url("../../img/build/ruler2x.jpg") type("image/jpeg")
+      );
+      }
+      transition-delay: 200ms;
+    }
+
+    &:nth-child(2) {
+      background-image: -webkit-image-set(
+        url("../../img/build/work.avif") type("image/avif"),
+        url("../../img/build/work.webp") type("image/webp"),
+        url("../../img/build/work.jpg") type("image/jpeg")
+      );
+      background-image: image-set(
+        url("../../img/build/work.avif") type("image/avif"),
+        url("../../img/build/work.webp") type("image/webp"),
+        url("../../img/build/work.jpg") type("image/jpeg")
+      );
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (min-resolution: 2dppx) {
+        background-image: -webkit-image-set(
+        url("../../img/build/work2x.avif") type("image/avif"),
+        url("../../img/build/work2x.webp") type("image/webp"),
+        url("../../img/build/work2x.jpg") type("image/jpeg")
+      );
+      background-image: image-set(
+        url("../../img/build/work2x.avif") type("image/avif"),
+        url("../../img/build/work2x.webp") type("image/webp"),
+        url("../../img/build/work2x.jpg") type("image/jpeg")
+      );
+      }
+      transition-delay: 300ms;
+    }
+
+    &:last-child {
+      background-image: -webkit-image-set(
+        url("../../img/build/glass.avif") type("image/avif"),
+        url("../../img/build/glass.webp") type("image/webp"),
+        url("../../img/build/glass.jpg") type("image/jpeg")
+      );
+      background-image: image-set(
+        url("../../img/build/glass.avif") type("image/avif"),
+        url("../../img/build/glass.webp") type("image/webp"),
+        url("../../img/build/glass.jpg") type("image/jpeg")
+      );
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (min-resolution: 2dppx) {
+        background-image: -webkit-image-set(
+        url("../../img/build/glass2x.avif") type("image/avif"),
+        url("../../img/build/glass2x.webp") type("image/webp"),
+        url("../../img/build/glass2x.jpg") type("image/jpeg")
+      );
+      background-image: image-set(
+        url("../../img/build/glass2x.avif") type("image/avif"),
+        url("../../img/build/glass2x.webp") type("image/webp"),
+        url("../../img/build/glass2x.jpg") type("image/jpeg")
+      );
+      }
+      transition-delay: 400ms;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.news {
+    max-height: 100px;
+    background-color: $form-bg;
+    &__wrapper {
+        padding: 30px 10px;
+        max-width: 685px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $headerFooter-text-color;
+    }
+    &__title {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    &__form {
+        display: flex;
+        justify-content: baseline;
+    }
+    &__input {
+        width: 250px;
+        padding: 11px 16px;
+        font-family: 'Open Sans';
+        &::placeholder {
+            font-size: 14px;
+            font-family: 'Open Sans';
+        }
+    }
+    &__button {
+        padding: 11px 48.5px;
+    }
+}

@@ -1,0 +1,93 @@
+.capabilities {
+  margin-bottom: 115px;
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 78px;
+    @media (max-width: 799px) {
+      display: grid;
+      width: 50%;
+      place-items: center;
+      margin: 0 auto;
+      text-align: center;
+      grid-template-rows: repeat(2, 1fr)
+    }
+  }
+  &__title {
+    position: relative;
+    font-size: 18px;
+    flex: 1;
+    letter-spacing: 2.31px;
+    line-height: 21.09px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../../img/build/Line.svg");
+      width: 50px;
+      height: 2px;
+      top: 28px;
+      left: 0px;
+    }
+    @media (max-width: 899px) {
+      flex-grow: 1;
+    }
+  }
+  &__text {
+    font-size: 11px;
+    line-height: 19px;
+    max-width: 405px;
+    @media (max-width: 799px) {
+      margin-top: 10px;
+    }
+  }
+  &__button {
+    margin-left: 33px;
+    @media (max-width: 799px) {
+      margin: 20px 0;
+      width: 40%;
+    }
+  }
+  &__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 250px;
+    font-weight: 700;
+    margin-bottom: 13px;
+  }
+  &__subtext {
+    max-width: 250px;
+    line-height: 23px;
+  }
+  &__img {
+    margin-bottom: 25px;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: 899px) {
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  &__item {
+    max-width: 295px;
+    padding: 38px 23px;
+    border: 1px solid $basic-border-color;
+    &:first-child {
+      transition-delay: 200ms;
+    }
+    &:nth-child(2) {
+      transition-delay: 300ms;
+    }
+    &:last-child {
+      transition-delay: 400ms;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.footer {
+    font-size: 11px;
+    background-color: $footer-bg;
+    color: $headerFooter-text-color;
+    &__wrapper {
+        padding-top: 42px;
+        padding-bottom: 48px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 13px;
+        margin-bottom: 19px;
+        &--lists,
+        &--contacts {
+            margin-bottom: 10px;
+        }
+    }
+    &__img {
+        margin-bottom: 15px;
+    }
+    &__text {
+        line-height: 19px;
+        letter-spacing: 0.85px;
+    }
+    &__lists {
+        display: flex;
+        justify-content: space-between;
+        gap: 34px;
+    }
+    &__list {
+        list-style: none;
+    }
+    &__item {
+        font-weight: 600;
+        line-height: 25px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+    &__group {
+        &--info {
+            max-width: 250px;
+        }
+    }
+    &__socials {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        padding-top: 30px;
+    }
+    &__social {
+        cursor: pointer;
+    }
+    &__copyright {
+        text-align: center;
+    }
+    &__bottom {
+        background-color: $form-bg;
+        padding: 23px 10px;
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+        fill: #FFF;
+        transition: 0.4s;
+        &--facebook {
+            &:hover {
+                fill: lighten(blue, 10%);
+            }
+        }
+        &--twitter {
+            &:hover {
+                fill: cyan;
+            }
+        }
+        &--google {
+            &:hover {
+                fill: red;
+            }
+        }
+    }
+}
